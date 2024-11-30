@@ -6,15 +6,14 @@
 <h1>Benchmark: lit-html-1.1.2 (non-keyed)</h1><hr>
 <div id="result" style="white-space: pre; font-family: Monospaced, monospace"></div>
 <div id="root"></div>
-<script type="module" src="dist/main.js"></script>
 <script type="module">
-
-
     "use strict";
 
     import { suite, root } from "./../../bench.js";
+    import { render } from "dist/main.js";
 
-    suite["ivi"] = function(items){
+    suite["ivi"] = items => {
+        debugger;
 
         //render(template(items), root);
     };

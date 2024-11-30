@@ -2,18 +2,21 @@
   "private": true,
   "description": "",
   "main": "index.html",
+  "type": "module",
   "scripts": {
-    "build-dev": "rollup -c -w",
-    "build-prod": "rollup -c rollup.config.js"
+    "build": "rollup -c"
   },
   "dependencies": {
-    "ivi-html": "0.27.0",
-    "ivi": "0.27.1"
+    "@ivi/htm": "3.0.2",
+    "ivi": "3.0.3"
   },
   "devDependencies": {
-    "rollup": "1.15.6",
-    "rollup-plugin-node-resolve": "5.0.3",
-    "rollup-plugin-replace": "2.2.0",
-    "rollup-plugin-terser": "5.0.0"
+    "@ivi/rollup-plugin": "3.0.4",
+    "@rollup/plugin-node-resolve": "15.3.0",
+    "@rollup/plugin-terser": "0.4.4",
+    "@rollup/plugin-typescript": "12.1.1",
+    "rollup": "4.28.0",
+    "tslib": "2.8.1",
+    "typescript": "5.7.2"
   }
 }
